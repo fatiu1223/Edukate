@@ -436,7 +436,7 @@
     <!-- Testimonial Start -->
 
 
-  <!-- Contact Start -->
+<!-- Contact Start -->
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row align-items-center">
@@ -463,14 +463,21 @@
                 </div>
             </div>
 
-            <!-- ✅ ACTUAL FORM -->
+            <!-- ✅ Contact Form Using FormSubmit -->
             <div class="col-lg-7">
                 <div class="section-title position-relative mb-4">
                     <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
                     <h1 class="display-4">Send Us A Message</h1>
                 </div>
                 <div class="contact-form">
-                    <form action="contact.php" method="POST">
+                    <form action="https://formsubmit.co/abdulrahmanmariamafolake@gmail.com" method="POST">
+                        <!-- Optional hidden controls -->
+                        <input type="hidden" name="_subject" value="New Contact Message from Edukate!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- Optional: Redirect after submit -->
+                        <!-- <input type="hidden" name="_next" value="https://yourdomain.github.io/thankyou.html"> -->
+
                         <div class="row">
                             <div class="col-6 form-group">
                                 <input type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
@@ -491,7 +498,6 @@
                     </form>
                 </div>
             </div>
-            <!-- ✅ END FORM -->
         </div>
     </div>
 </div>
